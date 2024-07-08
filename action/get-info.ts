@@ -22,6 +22,3 @@ export async function GetInfo(values: z.infer<typeof InfoGirl>) {
     }
 }
 
-export async function testInfo() {
-   
-}
