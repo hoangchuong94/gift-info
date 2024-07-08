@@ -101,7 +101,7 @@ const Info = () => {
                         <button className="btn-yes" type="submit">
                             OK
                         </button>
-                        <button className="btn-no" type="submit">
+                        <button className="btn-no" type="button">
                             XÊ RA
                         </button>
                     </div>

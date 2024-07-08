@@ -10,15 +10,15 @@ export async function GetInfo(values: z.infer<typeof InfoGirl>) {
         if (!validatedFields.success) {
             return { error: 'Invalid fields!' };
         }
-
         const { fullName, phone } = validatedFields.data;
-        console.log(fullName, phone);
         await prisma.cte.create({
             data: { name: fullName, phone },
         });
+        return { success: true };
     } catch (error) {
         console.error(error);
         return { error: 'Internal server error' };
+    } finally {
+        await prisma.$disconnect();
     }
 }
-

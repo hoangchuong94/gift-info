@@ -1,8 +1,8 @@
 'use client';
-import ToggleWife from '@/components/button-primary/toggle-wife';
-import Info from '@/components/button-primary/info';
+import ToggleWife from '@/components/toggle-wife';
+import Info from '@/components/info';
 import React, { useState } from 'react';
-import ButtonPrimary from '@/components/button-primary/button-primary';
+import ButtonPrimary from '@/components/button-primary';
 
 const HomePage = () => {
     const [bypassPhone, setByPassPhone] = useState(false);
