@@ -18,7 +18,5 @@ export async function GetInfo(values: z.infer<typeof InfoGirl>) {
     } catch (error) {
         console.error(error);
         return { error: 'Internal server error' };
-    } finally {
-        await prisma.$disconnect();
-    }
+    } 
 }
